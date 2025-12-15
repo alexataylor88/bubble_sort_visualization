@@ -52,27 +52,31 @@ Author Name: Alexa Taylor
 Acknowledgement:
 1. I consulted the official gradio website to help me understand how to properly configure the slider component in my program. On this website I learned how to set up the slider's range and connect it to a function that displayed the output.
 https://www.gradio.app/main/docs/gradio/slider
-2. I used ChatGPT (Level 4) to help me identify why my code kept continually producing runtime errors, which it pointed out was caused by mismatched return values in callback functions which were causing Gradio to call errors.
-3. I also used ChatGPT to help me debug why my code would run but the output displayed would be inconsistent or buggy. ChatGPT helped clarify certain logical issues where the UI components were not behaving as expected and provided solutions for how to improve the visualization such as properly resetting the slider after each run and preventing unnessecary re-execution of the function by storing the steps and states.
+2. I used ChatGPT (level 4) to help me identify why my code kept continually producing runtime errors, which it pointed out was caused by mismatched return values in callback functions which were causing Gradio to call errors.
+3. I also used ChatGPT (level 4) to help me debug why my code would run but the output displayed would be inconsistent or buggy. ChatGPT helped clarify certain logical issues where the UI components were not behaving as expected and provided solutions for how to improve the visualization such as properly resetting the slider after each run and preventing unnessecary re-execution of the function by storing the steps and states.
 
 ## Testing and Verification
 
 The following images detail some test cases I explored to see how my program handled different user inputs:
 <img width="1280" height="800" alt="Screenshot 2025-12-15 at 3 03 45 AM" src="https://github.com/user-attachments/assets/c0cfda4d-d91f-4f2d-b085-5046ae7d2d05" />
 1. Identical elements only✅
+
 This was handled well as only 1 step was recorded as this is how bubble sort behaves when only the outer loop runs.
 
   <img width="1280" height="800" alt="Screenshot 2025-12-15 at 3 04 49 AM" src="https://github.com/user-attachments/assets/4d3738c1-af15-4003-bb08-a50c82115277" />
 
 2. No commas✅
+
 Although I put in the description that commas were required, I included this second case in code where they are only seperated by spaces to prevent unnecessary errors.
 
 <img width="1280" height="800" alt="Screenshot 2025-12-15 at 3 05 05 AM" src="https://github.com/user-attachments/assets/76326e24-04e7-4036-a27b-fbffa8371d89" />
 
 3. Input > 1✅
+
 This program validates that the user has provided more than one element before running the algorithm as sorting requires at least two in order to perform comparisons.
 
 <img width="1280" height="800" alt="Screenshot 2025-12-15 at 3 06 15 AM" src="https://github.com/user-attachments/assets/3ec87cd9-6e8a-4697-9475-9db2a4b0ca19" />
 
 4. Handles non numerical input✅
+
 This program validates user input and detects and handles non-numerical input to prevent runtime errors. 
